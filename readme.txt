@@ -1,4 +1,3 @@
-
 # Deep Gateway – Enterprise API Gateway & Microservices Architecture
 
 ### 1. Project Overview
@@ -15,21 +14,23 @@ The project uses a multi-module Maven structure to separate gateway core functio
 
 The project follows a modular architecture with the following major components:
 
-**2.1 Gateway Core Module**
+#### 2.1 Gateway Core Module
 
 The core module provides the foundational gateway infrastructure.
 
 Its architectural responsibilities include:
+
 - Establishing shared gateway abstractions and infrastructure.
 - Supporting extensible request-processing components.
 - Separating common gateway functionality from runtime-specific implementations.
 - Providing a foundation for integrating additional gateway capabilities.
 
-**2.2 WebFlux Gateway Module**
+#### 2.2 WebFlux Gateway Module
 
 Built around Spring WebFlux and the reactive programming model.
 
 Key technical areas include:
+
 - Non-blocking HTTP request processing.
 - Reactive request and response handling.
 - Asynchronous service communication.
@@ -38,29 +39,30 @@ Key technical areas include:
 
 This module is relevant to applications that require efficient asynchronous request processing and scalable I/O operations.
 
-**2.3 MVC Gateway Module**
+#### 2.3 MVC Gateway Module
 
 Provides a servlet-based integration approach.
 
 Key technical areas include:
+
 - Traditional HTTP request processing.
 - Servlet-based application integration.
 - Compatibility with Spring MVC application architectures.
 - Integration with enterprise applications using the servlet execution model.
 
-**2.4 Spring Boot Starter Module**
+#### 2.4 Spring Boot Starter Module
 
 Provides a simplified integration entry point for Spring Boot applications.
 
 Its architectural purpose is to reduce integration complexity and make gateway components easier to consume within Spring Boot-based microservices.
 
-**2.5 Dependency Management Module**
+#### 2.5 Dependency Management Module
 
 Centralizes dependency definitions and version management across project modules.
 
 This helps maintain consistency, reduce dependency conflicts, and simplify project maintenance.
 
-**2.6 Sample Application Module**
+#### 2.6 Sample Application Module
 
 Provides sample application code and configuration references for understanding gateway integration and project usage.
 
@@ -69,12 +71,14 @@ Provides sample application code and configuration references for understanding 
 The project provides an opportunity to study and work with several important enterprise backend engineering concepts:
 
 **API Gateway Architecture**
+
 - Centralized API access and request entry points.
 - Gateway-based routing architecture.
 - Separation of gateway infrastructure and business services.
 - Integration between gateway components and microservices.
 
 **Reactive Programming**
+
 - Spring WebFlux.
 - Project Reactor.
 - Asynchronous request processing.
@@ -82,6 +86,7 @@ The project provides an opportunity to study and work with several important ent
 - Reactive execution model.
 
 **Modular Software Engineering**
+
 - Maven multi-module project organization.
 - Separation of concerns.
 - Reusable component design.
@@ -89,6 +94,7 @@ The project provides an opportunity to study and work with several important ent
 - Framework integration and extensibility.
 
 **Enterprise Microservices Integration**
+
 - Spring Boot ecosystem integration.
 - Distributed service architecture.
 - Gateway and backend service communication.
